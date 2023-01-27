@@ -113,7 +113,7 @@ nav ul a:hover::after
 
 #accueil
 {
-    background: #000000;
+
     background-image: url(./assets/maPhoto-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -714,7 +714,8 @@ nav ul a:hover::after
     width:2.5rem;
     height: 2.5rem;
     padding: 8px;
-    background-color:#daad53
+    background-color:#daad53;
+    transition: 0.2s;
  }
  .squareOne a:hover:nth-child(1)
  {
@@ -965,8 +966,7 @@ nav ul a:hover::after
     }
     .inner3{
         display: flex;
-        max-width:4cm ;
-        min-width:3cm ;
+        width: 3cm;
         align-self: flex-end;
         margin-top: 2cm;
         margin-bottom: -2cm;
@@ -1015,8 +1015,7 @@ nav ul a:hover::after
     }
     .imgPortfolio2{
         display: block;
-        max-width: 5cm ;
-        min-width: 4cm;
+        width: 3cm;
         margin:4em -4em 0 1em;
         align-self: flex-start;
         rotate: 7deg;
@@ -1030,8 +1029,7 @@ nav ul a:hover::after
     .smallPanneauContact{
         display: block;
         align-self: flex-end;
-        max-width: 5cm;
-        min-width: 3cm;
+        width: 3cm;
         margin: 2rem -3rem 0;
         animation: rotation3 4s ease-in-out infinite;
         rotate: -7deg;
@@ -1106,18 +1104,21 @@ nav ul a:hover::after
         
         margin-left: -1em;
     }
-    /* #accueil{
-    background-size: 30cm 23cm;
-    background-position: center ;
+    #accueil{
+    background-size: 28cm 17cm ;
+    background-position: ;
  
-    } */
+    }
     .presentation{
-        width: 10cm;
-        
+        width: 9cm;
         padding: 1cm 1cm;
+        height: 10cm;
+        scale: 0.8;
+        margin-left: -1cm;
     }
     .presentation h1{
-        font-size: 30px;
+        margin-top: 1rem;
+        font-size: 28px;
     }
      .presentation h2{
         font-size: 20px;
@@ -1172,11 +1173,13 @@ nav ul a:hover::after
         overflow: hidden;
     }
     #skills h5{
-        font-size: 12px;
+        font-size: 11px;
     }
     .listSkills{
+        margin-top: -1.5cm;
         padding: 0;
         width: 100%;
+        width: 12cm;
     }
     .inner1{
         
@@ -1204,12 +1207,13 @@ nav ul a:hover::after
     }
   
     .squares{
-        scale: 0.9;
+        scale: 0.7;
     }
     .square{
        margin-left: -3cm;
        width: 12cm;
        scale: 0.9;
+       left: 0;
     }
     .squareOne{
         width: 10cm ;
