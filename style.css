@@ -390,21 +390,25 @@ nav ul a:hover::after
 {
     animation:floating1 ease-in-out 18s  infinite;
     -webkit-animation:floating1 ease-in-out 18s  infinite;
+    top: -1rem;
 }
 .cloud.two
 {
     animation:floating2 ease-in-out 18s  infinite;
     -webkit-animation:floating2 ease-in-out 18s  infinite;
+    top: 1rem;
 }
 .cloud.three
 {
     animation:floating3 ease-in-out 18s  infinite;
     -webkit-animation:floating3 ease-in-out 18s  infinite;
+    top: -1rem;
 }
 .cloud.four
 {
     animation:floating4 ease-in-out 18s  infinite;
     -webkit-animation:floating4 ease-in-out 18s  infinite;
+    top: 1rem;
 }
 
 
@@ -866,10 +870,10 @@ nav ul a:hover::after
         margin-left: 0;
     }
     nav li::after{
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
         font-size: 20px;
         transform: scale(0);
+        text-align: center;
         
     }
     nav li:hover{
@@ -883,13 +887,10 @@ nav ul a:hover::after
     nav ul li:nth-child(1)::after
     {
         content: "🙌";
-        
-        padding-left: 1rem;
     }
     nav ul li:nth-child(2)::after
         {
         content: "👨‍💻";
-        padding-left: 1rem;
     }
     nav ul li:nth-child(3)::after
     {
@@ -900,17 +901,15 @@ nav ul a:hover::after
     nav ul li:nth-child(4)::after
     {
         content: "🍳";
-        padding-left: 2rem;
     }
     nav ul li:nth-child(5)::after
     {
         content: "🤝";
-        padding-left: 2rem;
     }
 
     nav ul li:hover::after
     {
-        transform: scale(1.2);
+        transform: scale(1);
     }
 
 /* section accueil */
@@ -1090,29 +1089,22 @@ nav ul a:hover::after
  /*------ Responsive from Screen 800px------ */
 
  @media screen and (max-width:800px){
-    *{
-        /* font-family: 'lato'; */
-        /* font-weight: 500; */
-    }
+
     body{
         width: 100%;
         height: 100%;
     }
-    nav{
-        
-    }
+
     nav ul{
        width: 5cm;
     }
     nav ul li a{
         font-size: 17px;
     }
-    nav li::after{
-        padding-left: -10px;
-    }
+    
     nav svg {
         
-        margin-left: -4em;
+        margin-left: -3rem;
     }
     #accueil{
     background-size: cover ;
@@ -1189,15 +1181,37 @@ nav ul a:hover::after
 
     #skills{
         overflow: hidden;
+        width: 100%;
+        scale: 0.9;
+    }
+    .inner3
+    {
+        /* margin-left: -3cm; */
+        margin-right: 1cm;
     }
     #skills h5{
         font-size: 11px;
     }
     .listSkills{
-        margin-top: -1.5cm;
+        /* margin-top: -2cm; */
         padding: 0;
         width: 100%;
         width: 12cm;
+    }
+    .cloud{
+        overflow: hidden;
+    }
+    .cloud.one{
+        top: 2rem;
+    }
+    .cloud.two{
+        top: -2rem;
+    }
+    .cloud.three{
+        top: 2rem;
+    }
+    .cloud.four{
+        top: 1rem;
     }
     .inner1{
         
@@ -1209,6 +1223,8 @@ nav ul a:hover::after
 
     #projets{
         height: auto;
+        padding: 1cm;
+        scale: 0.9;
     }
     .imgPortfolio{
         display: none;
@@ -1241,6 +1257,7 @@ nav ul a:hover::after
     }
     .squareOne{
         width: 10cm ;
+        height: auto;
     }
     .squareOne h3
     {
@@ -1261,8 +1278,8 @@ nav ul a:hover::after
     }
     .squareTwo{
         width:8cm;
-        height: 16em;
-        padding: 2em;
+        height: auto;
+        padding: 3em 2em;
         margin-top: -1cm;
         margin-left: 10em;
     }
