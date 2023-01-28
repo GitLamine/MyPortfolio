@@ -97,7 +97,7 @@ nav ul a::after
     position: relative;
     width: 100%;
     height: 2px;
-    background-color: #e3e3e3 ;
+    background-color: #daad53c0;
     transform: scale(0);
     transition:  0.3s ease-in-out;
 
@@ -130,9 +130,12 @@ nav ul a:hover::after
 {
     margin-left:1cm ;
     width: 16cm;
-    padding: 1.5cm;
+    padding: 2cm;
+    background: rgb(37,48,55);
+    background: linear-gradient(40deg, rgb(37, 48, 55) 43%, #daad53c0 100%);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.683);
-    
+
+    color: black;
 }
 .presentation h2
 {
@@ -140,21 +143,18 @@ nav ul a:hover::after
     /* padding: 1rem; */
  
     font-size: 30px;
-    color:#000000;
 
 }
 .presentation h3
 {
     font-size: 26px;
     font-family: 'lato';
-    color: #0f0f0f;
     padding-top: 1rem;
 }
 .presentation h1
 {
     margin-left: 1em;
     font-size: 38px;
-    color: #000000;
     margin-top: -10px;
 }
 
@@ -164,23 +164,22 @@ nav ul a:hover::after
 #accueil h5
 {
     font-size: 20px;
-    text-shadow: 0 0 2px black;
+    font-weight: 800;
 }
 #accueil a 
 {
-    padding: 13px 18px;
+    padding: 1rem;
     text-decoration: none;
-    color:#daad53;
+    color:#ac915b;
     transition: 0.1s;
-    background-color:  #253037;
+    background-color:  #000000;
     border-radius: 50px;
     font-family: 'lato';
     
 }
 #accueil a:hover
 {
-    color: rgb(206, 185, 143);
-    background: #253037;
+    color: #daad53;
     
 }
 
@@ -193,6 +192,7 @@ nav ul a:hover::after
     justify-content: space-evenly;
     align-items: center;
     background: rgb(37, 48, 55);
+    
 
 }
 .containers
@@ -414,10 +414,8 @@ nav ul a:hover::after
 {
     position: relative;
     width: 100%;
-    height: auto;
-    /* padding: 1cm; */
-    /* background:linear-gradient(#64798f,#253037,#253037); */
-    padding: 1cm 0 2cm 0;
+    height: 100vh;
+    padding: 1cm 0 1cm 0;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -426,16 +424,16 @@ nav ul a:hover::after
 .cardContainer
 {
     position: relative;
-
-    margin: auto;
+    margin: 1em;
     display: flex;
-    justify-content: space-around;
-    max-width: 28cm;
+    justify-content: center;
+    max-width: 26cm;
     align-items: center;
     /* align-content: center; */
     flex-wrap: wrap;
-    padding: 1cm;
-    background : linear-gradient (to bottom,#d1e8ff, #253037);
+    padding: 0 1cm 0 1cm;
+    box-shadow: 0 0 8px;
+    
 
 }
 
@@ -445,7 +443,7 @@ nav ul a:hover::after
     /* width: 1cm; */
     width: 13rem;
     height: 16rem;
-    margin: 1cm;
+    margin: 1em;
     transform-style:preserve-3d ;
     perspective:20cm;
     border-radius: 15px;
@@ -554,7 +552,7 @@ nav ul a:hover::after
 {
     transform-style: preserve-3d;
     width: 100%;
-    height: 70%;
+    /* height: 70%; */
     padding: 20px;
     background: #000000b2;
     display:flex;
@@ -591,8 +589,7 @@ nav ul a:hover::after
 .contentBx div a span
 {
    border-radius:100px;
-   padding:5px ;
-   background-color:   #daad53;
+   scale: 1.6;
 }
 .contentBx div h2
 {
@@ -604,7 +601,12 @@ nav ul a:hover::after
 {
     color: #fff;
     font-size:14px ;
+    line-height: 18px;
     color: #ffffffc5;
+}
+.contentBx div h4
+{
+    margin: 7px;
 }
 .imgPortfolio1
 {
@@ -614,7 +616,7 @@ nav ul a:hover::after
     justify-self: flex-end;
     animation: mouv2 3s ease-in-out infinite;
     -webkit-animation: mouv2 3s ease-in-out infinite;
-    margin-bottom: 2cm;
+    /* margin-bottom: 2cm; */
 
 }
 .imgPortfolio2{
@@ -668,6 +670,7 @@ nav ul a:hover::after
     background-color: #daad53;
     margin: 0 auto;
     top: 3cm;
+    box-shadow: 65px 45px 0px #000000a6;
  }
 
 
@@ -796,7 +799,6 @@ nav ul a:hover::after
     }
     nav svg
     {
-        /* background: #daad53; */
         fill: #daad53;
         width: 40px;
         /* padding: -1rem; */
@@ -864,7 +866,6 @@ nav ul a:hover::after
         margin-left: 0;
     }
     nav li::after{
-        /* background-color: #03cdff; */
         width: 3rem;
         height: 3rem;
         font-size: 20px;
@@ -881,7 +882,6 @@ nav ul a:hover::after
 }
     nav ul li:nth-child(1)::after
     {
-        /* transform: scale(1); */
         content: "🙌";
         
         padding-left: 1rem;
@@ -910,7 +910,7 @@ nav ul a:hover::after
 
     nav ul li:hover::after
     {
-        transform: scale(1);
+        transform: scale(1.2);
     }
 
 /* section accueil */
@@ -1090,29 +1090,40 @@ nav ul a:hover::after
  /*------ Responsive from Screen 800px------ */
 
  @media screen and (max-width:800px){
+    *{
+        /* font-family: 'lato'; */
+        /* font-weight: 500; */
+    }
     body{
         width: 100%;
         height: 100%;
     }
     nav{
         
-    };
+    }
     nav ul{
-        width: 5cm;
+       width: 5cm;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    nav li::after{
+        padding-left: -10px;
     }
     nav svg {
         
-        margin-left: -1em;
+        margin-left: -4em;
     }
     #accueil{
-    background-size: 28cm 17cm ;
-    background-position: ;
- 
+    background-size: cover ;
+    background-position:60% 0% ;
+    height: 100vh;
     }
+  
     .presentation{
         width: 9cm;
-        padding: 1cm 1cm;
-        height: 10cm;
+        padding: 2rem 1rem;
+        height: auto;
         scale: 0.8;
         margin-left: -1cm;
     }
@@ -1121,20 +1132,26 @@ nav ul a:hover::after
         font-size: 28px;
     }
      .presentation h2{
-        font-size: 20px;
+        font-size: 22px;
     }
      .presentation h3{
-        font-size: 20px;
+        font-size: 23px;
     }
+    .presentation h5
+    {
+        margin: 1cm 0;
+    }
+   
     #propos{
         flex-direction: column;
         justify-content: center;
-       padding: 1rem;
+        margin: 1em;
+        height: auto;
  
     }
     #propos span{
-        width: 1.4cm;
-        height: 1.4cm;
+        width: 2cm;
+        height: 2cm;
         margin: 0;
     }
     .containers{
@@ -1149,11 +1166,12 @@ nav ul a:hover::after
     }
     .containerP 
 {
-    width: 11cm ;
+    width: 10cm ;
+    
 
 }
     .containers h2{
-        margin: 7px 0 7px;
+        margin: 1cm 0 1cm;
     }
     .containers p{
         font-size: 18px;
@@ -1192,11 +1210,17 @@ nav ul a:hover::after
     #projets{
         height: auto;
     }
-       .imgPortfolio{
+    .imgPortfolio{
         display: none;
+    }
+    
+    .imgPortfolio2{
+        margin-top: -1em;
+
     }
     .cardContainer{
         justify-content: center;
+        margin: 2cm 0 0 0;
     }
 
    
@@ -1220,12 +1244,14 @@ nav ul a:hover::after
     }
     .squareOne h3
     {
+        margin-top: 1em;
        font-size: 22px;
        color: white;
     }
     .squareOne p
     {
        font-size: 18px;
+       margin: 1rem;
        
     }
     .squareOne a
