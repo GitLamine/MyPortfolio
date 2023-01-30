@@ -17,15 +17,15 @@ body
     background: #253037;
 
 }
+/* Scrollbar */
 
 ::-webkit-scrollbar{
-    width: 1.2rem;
-    height: 1em;
+    width: 1rem;
+    height: 1rem;
 }
 ::-webkit-scrollbar-track
 {
     background: #253037;
-    /* margin-block: 0.5em; */
     border-radius: 100vw;
     -webkit-border-radius: 100vw;
     -moz-border-radius: 100vw;
@@ -34,13 +34,15 @@ body
 }
 ::-webkit-scrollbar-thumb
 {
-    background-color: #e0b45a;
+    background-color: #f2bc57;
     border-radius: 100vw;
     -webkit-border-radius: 100vw;
     -moz-border-radius: 100vw;
     -ms-border-radius: 100vw;
     -o-border-radius: 100vw;
 }
+
+/* nav */
 
 nav
 {
@@ -85,7 +87,7 @@ nav li
 nav ul li a
 {
     text-decoration: none;
-    color:#e0b45a;
+    color:#f2bc57;
     display: inline;
     font-size: 20px;
 }
@@ -97,7 +99,7 @@ nav ul a::after
     position: relative;
     width: 100%;
     height: 2px;
-    background-color: #daad53c0;
+    background-color: #f2bc57;
     transform: scale(0);
     transition:  0.3s ease-in-out;
 
@@ -132,7 +134,7 @@ nav ul a:hover::after
     width: 16cm;
     padding: 2cm;
     background: rgb(37,48,55);
-    background: linear-gradient(35deg, #e0b35afa -10%,  #253037f8 50%);
+    background: linear-gradient(35deg, #e0b35ade 10%,  #253037d5 70%);
     box-shadow: -4px -4px 30px 10px rgba(0, 0, 0, 0.683);
 
     color: black;
@@ -1122,7 +1124,7 @@ nav ul a:hover::after
         padding: 2rem 1rem;
         height: auto;
         scale: 0.8;
-        margin-left: -1cm;
+        margin-left: 10px;
     }
     .presentation h1{
         margin-top: 1rem;
@@ -1136,7 +1138,7 @@ nav ul a:hover::after
     }
     .presentation h5
     {
-        margin: 1cm 0;
+        margin: 1em 0;
     }
    
     #propos{
