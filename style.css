@@ -116,7 +116,7 @@ nav ul a:hover::after
 #accueil
 {
 
-    background-image: url(./assets/maPhoto-min.jpg);
+    background-image: url(./assets/maPhoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
