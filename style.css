@@ -66,7 +66,6 @@ nav img {
     align-items: center;
     /* left: -7cm; */
 
-
 }
 
 nav ul {
@@ -138,7 +137,6 @@ nav ul a:hover::after {
 
 .presentation h2 {
     font-family: 'lato';
-    /* padding: 1rem; */
 
     font-size: 30px;
 
@@ -308,7 +306,6 @@ nav ul a:hover::after {
     justify-content: space-between;
     overflow: hidden;
     background-color: rgb(209, 232, 255);
-    /* margin-top: 2cm; */
 }
 
 .inner3 {
@@ -325,7 +322,6 @@ nav ul a:hover::after {
 .inner1 {
     max-width: 27cm;
     min-width: 17cm;
-    /* margin-bottom: 1rem; */
 
 }
 
@@ -470,7 +466,6 @@ nav ul a:hover::after {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    transform: perspective(20cm);
 
 }
 
@@ -484,9 +479,6 @@ nav ul a:hover::after {
 
 .imgBx {
     position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
     height: 100%;
 
 
@@ -550,9 +542,7 @@ nav ul a:hover::after {
 }
 
 .contentBx div {
-    transform-style: preserve-3d;
     width: 100%;
-    /* height: 70%; */
     padding: 20px;
     background: #000000b2;
     display: flex;
@@ -782,12 +772,15 @@ nav ul a:hover::after {
 /* -------------------responsive----------------- */
 
 @media screen and (max-width:1100px) {
+    header {
+
+        overflow: hidden;
+    }
 
     nav {
         height: 1.8cm;
         display: flex;
         justify-content: center;
-        overflow: visible;
     }
 
     .svg {
@@ -851,7 +844,7 @@ nav ul a:hover::after {
         align-items: flex-start;
         transition: 0.5s;
         height: auto;
-        /* overflow: hidden; */
+        display: none;
     }
 
     nav ul a::after {
@@ -1371,7 +1364,7 @@ nav ul a:hover::after {
 }
 
 
-/* ------animation------ */
+/* ---------------animation-------------- */
 
 
 @keyframes rotation {
