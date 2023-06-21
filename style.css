@@ -199,11 +199,12 @@ nav ul a:hover::after {
 }
 
 .containers.text {
-    width: 12cm;
+    /* width: 12cm; */
     color: aliceblue;
     display: flex;
     flex-direction: column;
     align-self: center;
+
 }
 
 .containers span {
@@ -242,13 +243,11 @@ nav ul a:hover::after {
     background: -webkit-linear-gradient(rgb(255, 210, 114), rgba(67, 67, 67, 0.811));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .containerP {
-    width: 12cm;
+    max-width: 15cm;
     overflow: hidden;
-
 }
 
 .containers p {
@@ -357,7 +356,7 @@ nav ul a:hover::after {
 
 .listSkills h5 {
     position: absolute;
-    font-size: 18px;
+    font-size: 15px;
     font-size-adjust: 0.5;
     z-index: 2;
     justify-self: flex-end;
@@ -985,7 +984,7 @@ nav ul a:hover::after {
 
 
     #skills h5 {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .cloud {
@@ -1226,7 +1225,7 @@ nav ul a:hover::after {
     }
 
     #skills h5 {
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .listSkills {

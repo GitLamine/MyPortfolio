@@ -1,4 +1,3 @@
-
 // -------------------js nativ script------------------//
 let links = document.querySelectorAll("ul a");
 let menu = document.querySelector("nav ul")
@@ -28,3 +27,5 @@ links.forEach((e) => {
 });
 // hide 
 svg.addEventListener("click", closeMenu);
+
+AOS.init();
