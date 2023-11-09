@@ -6,6 +6,7 @@ let svg = document.querySelector(".svg")
 let span = document.querySelector(".spans")
 
 
+
 // Click open menu
 function btn() {
     menu.style.display = "flex";
@@ -27,5 +28,6 @@ links.forEach((e) => {
 });
 // hide 
 svg.addEventListener("click", closeMenu);
+
 
 AOS.init();
