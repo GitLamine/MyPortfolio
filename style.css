@@ -64,8 +64,15 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* left: -7cm; */
+    transition: transform 0.5s ease;
+}
 
+nav:hover img {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 nav ul {
@@ -265,8 +272,8 @@ nav ul a:hover::after {
 }
 
 .containerImg {
-    width: 10cm;
-    height: 14cm;
+    /* width: 80%; */
+    height: 13cm;
     overflow: hidden;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -277,10 +284,11 @@ nav ul a:hover::after {
 
 
 .containerImg img {
-    width: 10cm;
+    /* width: 10cm; */
     height: 17cm;
-    object-fit: cover;
-    object-position: center -30px;
+    /* object-fit: cover; */
+    object-position: center;
+    object-fit: contain;
 }
 
 .containers img:hover {
@@ -1206,11 +1214,11 @@ nav ul a:hover::after {
         margin-top: 1rem;
     }
 
-    .containerImg {
+    /* .containerImg {
         width: 5cm;
         padding: 0;
 
-    }
+    } */
 
     #skills {
         overflow: hidden;
@@ -1219,7 +1227,6 @@ nav ul a:hover::after {
     }
 
     .inner3 {
-        /* margin-left: -3cm; */
         margin-right: 1cm;
     }
 
@@ -1228,7 +1235,6 @@ nav ul a:hover::after {
     }
 
     .listSkills {
-        /* margin-top: -2cm; */
         padding: 0;
         width: 100%;
         width: 12cm;
